@@ -66,9 +66,8 @@ bool test_thermal_initialization() {
     std::cout << "Test: Thermal velocity initialization... ";
     
     float T = 1.0f;
-    float mass = 1.0f;
-    float kB = 1.0f;
-    float expected_stddev = std::sqrt(kB * T / mass);
+    // Use the same kB and mass as Config so expected matches ParticleSystem
+    float expected_stddev = std::sqrt(Config::kB * T / Config::mass);
     
     ParticleSystem system(5000, T);
     system.initialize_random(100.0f);
