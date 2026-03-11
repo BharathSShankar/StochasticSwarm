@@ -1,0 +1,15 @@
+numpy
+matplotlib
+gymnasium
+pybind11
+pytest
+stable-baselines3
+tensorboard
+tqdm
+rich
+torch
+Pillow
+imageio
+imageio-ffmpeg
+scipy
+pytorch-lightning
